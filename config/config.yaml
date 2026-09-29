@@ -1,0 +1,32 @@
+# Application & framework configuration
+# Non-sensitive settings only. Credentials must come from environment variables (see README).
+
+app:
+  base_url: "https://automationexercise.com"
+
+browser:
+  name: "chromium"          # pytest-playwright maps this to Google Chrome via channel below
+  channel: "chrome"         # use installed Google Chrome
+  headless: false
+  slow_mo_ms: 0
+  viewport:
+    width: 1920
+    height: 1080
+
+timeouts:
+  default_timeout_ms: 30000        # default Playwright action/assertion timeout
+  navigation_timeout_ms: 30000
+  page_load_wait_ms: 5000          # small settle window used only for ad-overlay detection
+
+ads:
+  # Selectors used by the central ad/overlay handler (utilities/ad_handler.py).
+  # Kept in config so new overlay patterns can be added without touching code.
+  overlay_selectors:
+    - "iframe[id^='google_ads_iframe']"
+    - "div[id^='google_ads_iframe']"
+    - "ins.adsbygoogle"
+    - "#gdpr-widget"
+    - ".fc-consent-root"
+
+allure:
+  results_dir: "reports/allure-results"

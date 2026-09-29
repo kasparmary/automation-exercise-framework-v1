@@ -1,0 +1,4 @@
+test_case,search_term,expected_product_name
+TC_SEARCH_01,Blue Top,Blue Top
+TC_SEARCH_02,Men Tshirt,Men Tshirt
+TC_SEARCH_03,Winter Top,Winter Top

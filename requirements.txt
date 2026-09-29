@@ -1,0 +1,15 @@
+# Core test framework
+pytest>=8.3.3
+
+# Playwright Python (Sync API) + Pytest integration
+playwright>=1.48
+pytest-playwright>=0.5.2
+
+# Allure reporting
+allure-pytest>=2.13.5
+
+# Config / data handling
+PyYAML>=6.0.3
+
+# Linting / formatting
+ruff>=0.6.9

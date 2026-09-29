@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+
+# Pytest / Playwright
+.pytest_cache/
+test-results/
+playwright-report/
+
+# Allure
+reports/allure-results/
+reports/allure-report/
+
+# Env files (never commit real credentials)
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

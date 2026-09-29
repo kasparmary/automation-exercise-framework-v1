@@ -1,0 +1,4 @@
+test_case,email,password,expected_result
+TC_LOGIN_01_valid_credentials,ENV_EMAIL,ENV_PASSWORD,success
+TC_LOGIN_02_valid_email_invalid_password,ENV_EMAIL,WrongPass@123,failure
+TC_LOGIN_03_unknown_email,unknown_user_9f8a7b@doesnotexist.com,AnyPass@123,failure
